@@ -1,0 +1,18 @@
+{
+  "name": "cssprecomiler",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "goservergo": "lite-server --baseDir=\"public\"",
+    "sass": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run sass\" \"npm run goservergo\""
+  },
+  "author": "June Duyen Nguyen",
+  "license": "private",
+  "private": true,
+  "devDependencies": {
+    "concurrently": "^8.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.69.2"
+  }
+}
